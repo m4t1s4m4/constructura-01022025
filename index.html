@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Santa Patricia SPA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" href="img/CONSTRUCTORA.png" type="image/png">
+
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">
+          <img src="img/CONSTRUCTORA.png" alt="Logo Constructora Santa Patricia">
+        </div>
+        <nav>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/nosotros.html">Nosotros</a></li>
+            <li><a href="pages/servicios.html">Servicios</a></li>
+            <li><a href="pages/proyectos.html">Proyectos</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="pages/galeria.html">Galeria</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <a href="tel:+56973771688">📞 +56 9 7377 1688</a>
+          <a href="pages/contacto.html" class="button">Solicita tu Presupuesto</a>
+        </div>
+      </header>
+      <script>
+// Seleccionar el botón y el menú
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+
+// Agregar evento al botón para mostrar/ocultar el menú
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+  console.log("Botón presionado, clase show: ", menu.classList.contains('show')); // Ayuda a verificar en consola
+});
+
+</script>
+
+
+    <main>
+        <!-- Sección Hero -->
+        <p>
+        </p>
+        <section class="hero" style="background-image: url('img/Diseño\ sin\ título.png');">
+            <div class="hero-text">
+                <h1>Constructora Santa Patricia SPA</h1>
+                <p>Especialistas en retiro de asbesto desde 2014, creando soluciones innovadoras y sostenibles para proteger la salud y el medio ambiente.</p>
+            </div>
+        </section>
+        <p>
+        </p>
+        <section class="hero" style="background-image: url('img/foto\ equipo.jpeg');">
+ 
+        </section>
+
+        <!-- Acerca de nosotros -->
+        <section class="contenido">
+            <div class="container">
+                <h2>¿Quiénes Somos?</h2>
+                <p>En Constructora Santa Patricia SPA, nos hemos consolidado como líderes en la industria de la construcción sostenible y la gestión ambiental. Desde nuestros inicios en 2014, hemos trabajado con compromiso y excelencia en cada proyecto, ayudando a transformar espacios con soluciones eficientes y responsables.</p>
+                <p>Con un equipo altamente capacitado y tecnología de última generación, ofrecemos servicios especializados en el retiro de asbesto, construcción sostenible y consultoría ambiental, adaptándonos a las necesidades de cada cliente.</p>
+            </div>
+        </section>
+
+        <!-- Servicios Destacados -->
+        <section class="contenido">
+            <div class="container">
+                <h2 id="titulo-servicios">Servicios Especializados</h2>
+                <div class="servicios-grid">
+                    <div class="servicio" id="servicio-asbesto">
+                        <img src="img/image.png" alt="Servicio 1" class="imagen-servicio">
+                        <h3>Retiro de Asbesto</h3>
+                        <p>Especialistas certificados para la eliminación segura y eficiente del asbesto en proyectos residenciales e industriales.</p>
+                    </div>
+                    <div class="servicio" id="servicio-sostenible">
+                        <img src="img/servicio2.jpg" alt="Servicio 2" class="imagen-servicio">
+                        <h3>Cubiertas</h3>
+                        <p>Diseñamos y construimos espacios utilizando materiales ecológicos y técnicas de bajo impacto ambiental.</p>
+                    </div>
+                    <div class="servicio" id="servicio-consultoria">
+                        <img src="img/servicio3.jpg" alt="Servicio 3" class="imagen-servicio">
+                        <h3>Mejoramiento de estructuras</h3>
+                        <p>Brindamos asesoramiento especializado en gestión de residuos y cumplimiento de normativas medioambientales.</p>
+                    </div>
+                    <div class="servicio" id="servicio-consultoria">
+                        <img src="img/servicio3.jpg" alt="Servicio 3" class="imagen-servicio">
+                        <h3>Arriendo Zona Movil de Descontaminacion</h3>
+                        <p>Brindamos asesoramiento especializado en gestión de residuos y cumplimiento de normativas medioambientales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Destacados -->
+        <section class="contenido">
+            <div class="container">
+                <h2>Proyectos Destacados</h2>
+                <div class="proyectos-grid">
+                    <div class="proyecto">
+                        <img src="img/image.png" alt="Proyecto 2">
+                        <h3>Etapa 0 ACHS La Florida</h3>
+                        <p>Implementación de técnicas innovadoras para la creación de hogares en zonas rurales y urbanas.</p>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/image copy.png" alt="Proyecto 1">
+                        <h3>Retiro de Cubierta Asbesto</h3>
+                        <p>Un proyecto integral para renovar espacios residenciales con materiales sostenibles y diseños modernos.</p>
+                    </div>
+
+                    <div class="proyecto">
+                        <img src="img/image copy.png" alt="Proyecto 3">
+                        <h3>Reposicion cubierta ZINK</h3>
+                        <p>Soluciones eficientes para el manejo de desechos en obras de construcción, garantizando un impacto ambiental mínimo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+<p>
+    
+</p>
+<a href="https://wa.me/message/DOPWTJAILYLXP1" target="_blank">
+    <img src="img/whatsapp (1).png" alt="WhatsApp" id="boton-whatsapp" width="40">
+</a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/servicios.html">Servicios</a></li>
+                    <li><a href="pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="pages/galeria.html">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="footer-section logo">
+                <img src="img/CONSTRUCTORA.png" alt="Logo Constructora Santa Patricia">
+            </div>
+            <div class="footer-section contacto">
+                <h3>Información de contacto:</h3>
+                <p>Pirque, Santiago de Chile</p>
+                <p>Región Metropolitana</p>
+                <p>+56 9 7377 1688</p>
+                <p>construccionessantapatricia@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Constructora Santa Patricia SPA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

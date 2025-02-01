@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Constructora Santa Patricia SPA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="icon" href="CONSTRUCTORA.png" type="image/png">
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">
+          <img src="CONSTRUCTORA.png" alt="Logo Constructora Santa Patricia">
+        </div>
+        <nav>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <a href="tel:+56973771688">📞 +56 9 7377 1688</a>
+          <a href="contacto.html" class="button">Solicita tu Presupuesto</a>
+        </div>
+      </header>
+      <script>
+// Seleccionar el botón y el menú
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+
+// Agregar evento al botón para mostrar/ocultar el menú
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+  console.log("Botón presionado, clase show: ", menu.classList.contains('show')); // Ayuda a verificar en consola
+});
+
+</script>
+
+    <main>
+        <section class="hero" style="background-image: url('../img/Diseño\ sin\ título.png');">
+            <div class="hero-text">
+                <h1>Proyectos</h1>
+                <p>Compromiso demostrado en cada obra.</p>
+            </div>
+        </section>
+
+        <section class="contenido">
+            <div class="container">
+                <h2>Proyectos Destacados</h2>
+                <ul>
+                    <li>Proyecto A: Manejo de asbesto en viviendas.</li>
+                    <li>Proyecto B: Construcción habitacional en zonas rurales.</li>
+                    <li>Proyecto C: Remodelación de infraestructuras urbanas.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <p>
+        
+    </p>
+
+    <a href="https://wa.me/message/DOPWTJAILYLXP1" target="_blank">
+        <img src="../img/whatsapp (1).png" alt="WhatsApp" id="boton-whatsapp" width="40">
+    </a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/servicios.html">Servicios</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section logo">
+                <img src="../img/CONSTRUCTORA.png" alt="Logo Constructora Santa Patricia">
+            </div>
+            <div class="footer-section contacto">
+                <h3>Información de contacto:</h3>
+                <p>Pirque, Santiago de Chile</p>
+                <p>Región Metropolitana</p>
+                <p>+56 9 7377 1688</p>
+                <p>construccionessantapatricia@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constructora Santa Patricia SPA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Constructora Santa Patricia SPA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="icon" href="CONSTRUCTORA.png" type="image/png">
+    <style>
+        /* Estilos para la galería */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            border-color: #007BFF;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 4px solid #fff;
+        }
+
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .lightbox .close:hover {
+            background: rgba(255, 0, 0, 0.6);
+        }
+
+        .lightbox .navigation {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 36px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .lightbox .prev {
+            left: 20px;
+        }
+
+        .lightbox .next {
+            right: 20px;
+        }
+        .galeria.h2 {
+            font-size: 2.5rem; /* Tamaño grande del texto */
+            color: #007BFF; /* Color azul llamativo */
+            text-align: center; /* Centrado en la página */
+            margin: 20px 0; /* Espaciado superior e inferior */
+            font-weight: bold; /* Negrita */
+            text-transform: uppercase; /* Transformar el texto a mayúsculas */
+            letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <img src="CONSTRUCTORA.png" alt="Logo Constructora Santa Patricia">
+        </div>
+        <nav>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <a href="tel:+56973771688">📞 +56 9 7377 1688</a>
+          <a href="contacto.html" class="button">Solicita tu Presupuesto</a>
+        </div>
+      </header>
+      <script>
+// Seleccionar el botón y el menú
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+
+// Agregar evento al botón para mostrar/ocultar el menú
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+  console.log("Botón presionado, clase show: ", menu.classList.contains('show')); // Ayuda a verificar en consola
+});
+
+</script>
+
+    <main>
+        <section class="hero" style="background-image: url('../img/Dise%C3%B1o%20sin%20t%C3%ADtulo.png');">
+            <div class="hero-text">
+                <h1>Galeria</h1>
+                <p>
+                    Bienvenido a nuestra galería,  donde podrá explorar una breve muestra de los trabajos que hemos realizado como Constructora Santa Patricia SPA. 
+                </p>
+
+            
+            </div>
+        </section>
+<p>
+
+</p>
+
+<h2 class="galeria h2"> Etapa 0 ACHS La Florida</h2>
+
+        <section class="gallery-section">
+            <div class="gallery">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 1">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 2">
+                <img src="../img/imagen3.jpg" alt="Imagen 3">
+                <img src="../img/imagen4.jpg" alt="Imagen 4">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 1">
+
+            </div>
+<p>
+    
+</p>
+<h2 class="galeria h2"> Retiro de cubierTa MCA</h2>
+
+        <section class="gallery-section">
+            <div class="gallery">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 1">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 2">
+                <img src="../img/imagen3.jpg" alt="Imagen 3">
+                <img src="../img/imagen4.jpg" alt="Imagen 4">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 1">
+
+            </div>
+            <p>
+    
+            </p>            
+            <div class="lightbox" id="lightbox">
+                <span class="close" id="close">&times;</span>
+                <span class="navigation prev" id="prev">&#8249;</span>
+                <img id="lightboxImage" src="" alt="Imagen Ampliada">
+                <span class="navigation next" id="next">&#8250;</span>
+            </div>
+        </section>
+        <h2 class="galeria h2">REPOSICION CUBIERTA ZINK</h2>
+
+        <section class="gallery-section">
+            <div class="gallery">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 1">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 2">
+                <img src="../img/imagen3.jpg" alt="Imagen 3">
+                <img src="../img/imagen4.jpg" alt="Imagen 4">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 1">
+
+            </div>
+        </section>
+
+        <h2 class="galeria h2">RETIRO PISO COMPONENTE MCA</h2>
+
+        <section class="gallery-section">
+            <div class="gallery">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 1">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 2">
+                <img src="../img/imagen3.jpg" alt="Imagen 3">
+                <img src="../img/imagen4.jpg" alt="Imagen 4">
+                <img src="../img/CONSTRUCTORA.png" alt="Imagen 1">
+
+            </div>
+        </section>
+
+
+<p>
+    
+</p>
+    </main>
+    <a href="https://wa.me/message/DOPWTJAILYLXP1" target="_blank">
+        <img src="../img/whatsapp (1).png" alt="WhatsApp" id="boton-whatsapp" width="40">
+    </a>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="footer-section logo">
+                <img src="../img/CONSTRUCTORA.png" alt="Logo Constructora Santa Patricia">
+            </div>
+            <div class="footer-section contacto">
+                <h3>Información de contacto:</h3>
+                <p>Pirque, Santiago de Chile</p>
+                <p>Región Metropolitana</p>
+                <p>+56 9 7377 1688</p>
+                <p>construccionessantapatricia@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Constructora Santa Patricia SPA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para la funcionalidad de Lightbox
+        const gallery = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const close = document.getElementById('close');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+
+        let currentIndex = 0;
+
+        function updateLightboxImage(index) {
+            lightboxImage.src = gallery[index].src;
+        }
+
+        gallery.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentIndex = index;
+                lightbox.style.display = 'flex';
+                updateLightboxImage(currentIndex);
+            });
+        });
+
+        close.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImage && e.target !== close && e.target !== prev && e.target !== next) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+        prev.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + gallery.length) % gallery.length;
+            updateLightboxImage(currentIndex);
+        });
+
+        next.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % gallery.length;
+            updateLightboxImage(currentIndex);
+        });
+    </script>
+</body>
+</html>
